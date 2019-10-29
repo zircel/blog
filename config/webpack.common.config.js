@@ -14,8 +14,7 @@ const scss = {
    use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
 }
 
-filenames = fs.readdirSync('src/posts/').filter(f => f != '.DS_Store')
-
+const filenames = fs.readdirSync('src/posts/').filter(f => f != '.DS_Store')
 const htmlPluginPages = filenames.map(file => {
    if (!file.endsWith('.pug')) {
       throw new Error('posts folder only allows .pug files')
@@ -52,10 +51,6 @@ const config = {
       path: path.resolve(__dirname, '../public'),
       filename: 'main.js'
    },
-   //    resolve: {
-   //       extensions: ['.js', '.ts']
-   //    }
-   // }
    module: {
       rules: [pug, scss]
    },
