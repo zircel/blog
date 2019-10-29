@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Zircel Blog
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    
+  body
+    #blog-menu
+
+      header
+        div.flexed
+          span.z Z
+          span.slash /
+          span Blog
+        button(class="menu-close") 
+
+      nav
+        a(href="") Home
+        a(href="test") A test post
+        a(href="test2") A 2nd test post
+
+      footer 
+        span &copy; #{new Date().getFullYear()}
+        a(href="https://www.zircel.com") zircel.com
+
+    #blog-header 
+      button(class="menu-burger")
+      a#register(href="https://zircel.com") website
+    
+    #blog
+      block content
