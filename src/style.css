@@ -498,6 +498,11 @@ button.menu-close {
       }
    }
 }
+
+ul.a {
+   list-style-type: circle;
+   text-align: left;
+}
 .firstblog {
 }
 #blogbild {
