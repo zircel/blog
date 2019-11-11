@@ -2,6 +2,7 @@ doctype html
 html
   head
     title Zircel Blog
+    script(src="https://zircel.com/dist/hello/component.js")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
     //- TODO: meta tags
 
@@ -17,9 +18,10 @@ html
 
       nav
         a(href="") Home
-        a(href="test.html") A test post
-        a(href="test2.html") A 2nd test post
-
+        span About us
+        ul.a
+          a(href="teamIntroduction.html") How Zircel came about
+        
       footer 
         span &copy; #{new Date().getFullYear()}
         a(href="https://blog.zircel.com") zircel.com
@@ -27,6 +29,6 @@ html
     #blog-header 
       button(class="menu-burger")
       a#register(href="https://zircel.com") zircel.com
-    
+
     #blog
       block content

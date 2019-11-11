@@ -2,14 +2,26 @@ import './style.css'
 import a from './nodes/a'
 import h2 from './nodes/h2'
 
+const body = document.querySelector('#blog-intro')
+const page = document.createElement('zircel-page')
+
+// Configuration
+page.pid = '5891d72c07d37b8c12266e8a'
+page.path = '/blog-intro'
+page.scrolling = 'document'
+page.mode = 'development'
+
+page.init().catch(err => console.error(err))
+body.appendChild(page)
+
 // highlighing the chapter in the main navigation
-const chapterName = window.location.pathname.split('/')[2]
-const navigationItems = Array.from(document.querySelectorAll('#blog-menu a'))
-navigationItems.forEach(n => {
-   if (n.href.includes(chapterName)) {
-      n.classList.add('active')
-   }
-})
+// const chapterName = window.location.pathname.split('/')[2]
+// const navigationItems = Array.from(document.querySelectorAll('#blog-menu a'))
+// navigationItems.forEach(n => {
+//    if (n.href.includes(chapterName)) {
+//       n.classList.add('active')
+//    }
+// })
 
 // // Building the content navigation
 // const navigation = document.querySelector('#blog .chapter-navigation')
