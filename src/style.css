@@ -111,7 +111,9 @@ body {
    font-weight: lighter;
    margin-right: 12px;
 }
-
+span.category {
+   font-style: italic;
+}
 #blog-menu nav h4 {
    margin-top: 30px;
    margin-bottom: -5px;
