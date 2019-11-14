@@ -9,7 +9,7 @@ const page = document.createElement('zircel-page')
 page.pid = '5891d72c07d37b8c12266e8a'
 page.path = '/blog-intro'
 page.scrolling = 'document'
-page.mode = 'development'
+page.mode = 'production'
 
 page.init().catch(err => console.error(err))
 body.appendChild(page)
