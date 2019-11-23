@@ -4,22 +4,39 @@ include ../mixins.pug
 block head
 
   - const author = "Jessica"
+<<<<<<< HEAD
   - const title = "Introducing the team of Zircel"
   - const date = "2019-11-23"
   - const description = "Welcome to Zircel! You’re one step closer to making your life easier, more efficent and fun! So lean back, get some snacks and tag along as we tell you more about us as a company and as humans"
   
   +meta(title, date, description)
   
+=======
+  - const title = "C02 Calculator"
+  - const date = "2019-11-23"
+  - const description = "Make the world a better place!"
+  
+  +meta(title, date, description)
+
+>>>>>>> 7eb18839602f6b6e69a24d2919710f61620b8e45
 
 block intro 
 
   h1 Presenting you our special CO2 Footprint Calculator
   b because everyone can make a difference
 
-block structured
+  +authordate(author, date)
+
+block text
     
   h2 Why do I need to know about CO2?
+<<<<<<< HEAD
   p Climate change is the most discussed subject right now, for a good reason. The average global temperature has risen by 0.85 degrees Celsius since the 19th century, mainly because of the combustion of fuels like coal or oil, deforestation, and cattle breeding. Luckily, people are starting to become aware of their ecological footprint.
+=======
+  P Climate change is the most discussed subject right now, for a good reason. The average global temperature has risen by 0.85 degrees Celsius since the 19th century, mainly because of the combustion of fuels like coal or oil, deforestation, and cattle breeding. Luckily, people are starting to become aware of their ecological footprint.
+
+  img(src="assets/tinified/C02.png")
+>>>>>>> 7eb18839602f6b6e69a24d2919710f61620b8e45
 
   img(src="assets/Co2.png")
 
@@ -34,14 +51,18 @@ block structured
 
   p This is where we came up with the conversational CO2 Footprint Calculator.
 
-   img(src="assets/CO2-Bild-1.png")
+   img(src="assets/tinified/CO2-Bild-1.png")
 
   p By inventing the conversational CO2 Footprint Calculator, we came up with a simple and playful way to calculate your personal CO2 footprint which you can then compare with the Swiss average. It works by asking you simple questions about your daily lifestyle in regard to driving, eating, living etc. This information is then aggregated with our database to give you an estimated guess of your current CO2 footprint.The database is a bundle of based on the most recent scientific findings. 
 
   h2 How does it work?
   p The footprint calculator is implemented  with our platform Zircel. It engages the user in a conversation to find out about the user’s behavior.  After finishing the conversation the user  will be left with his or her CO2 footprint in comparison to an average Swiss citizen.  
 
+<<<<<<< HEAD
   img(src="assets/Co2-Bild-2.png")
+=======
+  img(src="assets/tinified/C02-Bild-2.png")
+>>>>>>> 7eb18839602f6b6e69a24d2919710f61620b8e45
 
   p The whole purpose is to further spread the awareness and help people reflect about their lifestyles. Whether you calculate it for your own interest, to challenge your friends, to live more consciously or just for fun, it’s completely up to you. 
 
