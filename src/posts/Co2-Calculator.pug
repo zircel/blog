@@ -1,4 +1,15 @@
 extends ../layout.pug
+include ../mixins.pug
+
+block head
+
+  - const author = "Jessica"
+  - const title = "C02 Calculator"
+  - const date = "2019-11-23"
+  - const description = "Make the world a better place!"
+  
+  +meta(title, date, description)
+
 
 block intro 
 
@@ -6,12 +17,14 @@ block intro
 
   b because everyone can make a difference
 
-block structured
+  +authordate(author, date)
+
+block text
     
   h2 Why do I need to know about CO2?
   P Climate change is the most discussed subject right now, for a good reason. The average global temperature has risen by 0.85 degrees Celsius since the 19th century, mainly because of the combustion of fuels like coal or oil, deforestation, and cattle breeding. Luckily, people are starting to become aware of their ecological footprint.
 
-  img(src="assets/CO2.png")
+  img(src="assets/tinified/C02.png")
 
   P However, based on our own experience, with this subject being in the media all the time, it can get overwhelming. Whatever we do, it seems as if it doesn’t have the right or too little impact.
 
@@ -26,14 +39,14 @@ block structured
 
   p This is where we came up with the conversational CO2 Footprint Calculator-l.
 
-   img(src="assets/CO2-Bild-1.png")
+   img(src="assets/tinified/CO2-Bild-1.png")
 
   p By inventing the conversational CO2 Footprint Calculator, we came up with a simple and playful way to calculate your personal CO2 usage which you can compare to the Swiss average. It works by asking you simple questions about your usage in regard to driving, eating, living etc. 
 
   h2 How does it work?
   p The footprint calculator is implemented  with our platform Zircel. It engages the user in a conversation to find out about the user’s behavior.  After finishing the conversation the user went  through one of our zircel-trees, comparable to a family tree and will be left with his or her CO2-usage in comparison to an average swiss-citizen.  
 
-  img(src="assets/co2-Bild-2.png")
+  img(src="assets/tinified/C02-Bild-2.png")
 
   p The whole purpose is to further spread the awareness and help people reflect about their lifestyles. Whether you calculate it for your own interest, to challenge your friends, to live more consciously or just for fun, it’s completely up to you. 
 
