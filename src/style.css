@@ -87,7 +87,7 @@ body {
 }
 
 #blog-menu nav * {
-   margin: 5px 60px;
+   margin: 5px 30px;
    display: table;
    padding: 5px 8px;
 }
@@ -111,9 +111,7 @@ body {
    font-weight: lighter;
    margin-right: 12px;
 }
-span.category {
-   font-style: italic;
-}
+
 #blog-menu nav h4 {
    margin-top: 30px;
    margin-bottom: -5px;
@@ -210,6 +208,14 @@ span.category {
    margin-top: 0;
 }
 
+#blog .intro span.author-date {
+   color: #757575;
+   display: block;
+   margin-top: 14px;
+   font-style: italic;
+   font-size: 14px;
+}
+
 #blog img {
    max-width: 90%;
    margin: 0 auto;
@@ -272,13 +278,11 @@ span.category {
 #blog ul {
    margin-left: 18px;
 }
+
 #blogtext h2 {
    margin-bottom: 0px;
 }
-/* Introduction */
-#blog-intro {
-   margin-top: 50px;
-}
+
 #overview {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -289,7 +293,7 @@ span.category {
 #overview a {
    text-decoration: none;
 }
-
+/* 
 #overview .docu-chapter {
    box-shadow: 0px 0px 5px 0 #cccbcb;
    border-radius: 5px;
@@ -305,46 +309,7 @@ span.category {
 #overview .docu-chapter h2 {
    margin-top: 0;
    padding-top: 0;
-}
-
-#blog .chapter-navigation a {
-   display: block;
-   color: #0099e5;
-   margin-left: 70px;
-   margin-top: 7px;
-   text-decoration: none;
-}
-
-#blog .chapter-navigation a.h3-chapter {
-   margin-left: 109px;
-   color: #797979;
-   font-size: 15px;
-}
-
-#blog .chapter-navigation a.h2-chapter:before {
-   content: '- ';
-   padding-right: 5px;
-   display: inline-block;
-}
-
-#blog .chapter-navigation a.h3-chapter + .h3-chapter {
-   margin-top: 2px;
-}
-
-#blog .chapter-navigation a:hover {
-   text-decoration: underline;
-}
-
-#blog .chapter-navigation {
-   margin: 35px 0;
-   padding-bottom: 35px;
-   border-bottom: 2px solid #eee;
-}
-
-#blog .chapter-navigation h2 {
-   margin-bottom: 20px;
-   margin-top: 0;
-}
+} */
 
 /* navigation */
 

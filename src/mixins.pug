@@ -1,0 +1,16 @@
+mixin meta(title, date, description)
+  title #{title}
+  meta(itemprop="datePublished" content=`${date}` id="date")
+  meta(property="og:title" content=`${title}`)
+  meta(property="og:description" content=`${description}`)
+  meta(property="description" content=`${description}`)
+  meta(property="og:type" content="article")
+
+
+mixin authordate(author, date)
+  - const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  - const day = new Date(date).getDate()
+  - const month = new Date(date).getMonth()
+  - const year = new Date(date).getFullYear()
+
+  span.author-date= `Written by ${author} - ${months[month]} ${day}, ${year}`

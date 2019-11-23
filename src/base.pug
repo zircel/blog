@@ -1,10 +1,9 @@
 doctype html
 html
   head
-    title Zircel Blog
     script(src="https://zircel.com/dist/hello/component.js")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-    //- TODO: meta tags
+    block head
 
   body
     #blog-menu
@@ -17,9 +16,8 @@ html
         button(class="menu-close") 
 
       nav
-        //a(href="") Home
-        span.category About us
-        a(href="about-us.html") Introducing the team of zircel
+        h4 Inside Zircel
+        a(href="about-us.html") Introducing the Team
         
       footer 
         span &copy; #{new Date().getFullYear()}
