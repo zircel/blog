@@ -1,45 +1,53 @@
 extends ../layout.pug
+include ../mixins.pug
+
+block head
+
+  - const author = "Jessica"
+  - const title = "Introducing the team of Zircel"
+  - const date = "2019-11-23"
+  - const description = "Welcome to Zircel! You’re one step closer to making your life easier, more efficent and fun! So lean back, get some snacks and tag along as we tell you more about us as a company and as humans"
+  
+  +meta(title, date, description)
+  
 
 block intro 
 
   h1 Presenting you our special CO2 Footprint Calculator
-
   b because everyone can make a difference
 
 block structured
     
   h2 Why do I need to know about CO2?
-  P Climate change is the most discussed subject right now, for a good reason. The average global temperature has risen by 0.85 degrees Celsius since the 19th century, mainly because of the combustion of fuels like coal or oil, deforestation, and cattle breeding. Luckily, people are starting to become aware of their ecological footprint.
+  p Climate change is the most discussed subject right now, for a good reason. The average global temperature has risen by 0.85 degrees Celsius since the 19th century, mainly because of the combustion of fuels like coal or oil, deforestation, and cattle breeding. Luckily, people are starting to become aware of their ecological footprint.
 
-  img(src="assets/CO2.png")
+  img(src="assets/Co2.png")
 
-  P However, based on our own experience, with this subject being in the media all the time, it can get overwhelming. Whatever we do, it seems as if it doesn’t have the right or too little impact.
-
-  P So what can I change that will actually help? 
+  p However, based on our own experience, it can get overwhelming with this subject being in the media all the time. Whatever we do, it seems to have too little impact. So what can I change that will actually help? 
 
   h2 Where can I save the most CO2 in regard to my personal lifestyle?
 
-  p We from Zircel are a young team that evolved from ETH. Since we love to combine technology with humanity, we set ourselves the goal to invent a sustainable and helpful tool, that would be used to make the world a better place. So we asked ourselves; 
+  p Since we love to combine technology with humanity, we set ourselves the goal to invent a sustainable and helpful tool, that can be used to make the world a better place. So we asked ourselves;
   b “How can we make it easier for people to become aware and possibly change their lifestyle?”
 
-  p For us, a big issue in making sustainable lifestyle-changes is that there is too much loose information lying around. It is difficult to see the big picture, so you don’t really know what change has the biggest impact and which doesn’t. To solve this problem, we want to achieve awareness in a non-tiring, non-overflowing way, so people can be confronted with the subject in a positive and non-judgemental way. 
+  p For us, a major issue in shaping a sustainable lifestyle is that too much loose information is lying around. It is difficult to see the big picture, so you don’t really know what lifestyle change has the biggest impact on your CO2 footprint and which doesn’t. In order to solve this problem, we want to create awareness in an untiring, not overstraining way, so that people can be confronted with the topic in a positive and unbiased way. 
 
-  p This is where we came up with the conversational CO2 Footprint Calculator-l.
+  p This is where we came up with the conversational CO2 Footprint Calculator.
 
    img(src="assets/CO2-Bild-1.png")
 
-  p By inventing the conversational CO2 Footprint Calculator, we came up with a simple and playful way to calculate your personal CO2 usage which you can compare to the Swiss average. It works by asking you simple questions about your usage in regard to driving, eating, living etc. 
+  p By inventing the conversational CO2 Footprint Calculator, we came up with a simple and playful way to calculate your personal CO2 footprint which you can then compare with the Swiss average. It works by asking you simple questions about your daily lifestyle in regard to driving, eating, living etc. This information is then aggregated with our database to give you an estimated guess of your current CO2 footprint.The database is a bundle of based on the most recent scientific findings. 
 
   h2 How does it work?
-  p The footprint calculator is implemented  with our platform Zircel. It engages the user in a conversation to find out about the user’s behavior.  After finishing the conversation the user went  through one of our zircel-trees, comparable to a family tree and will be left with his or her CO2-usage in comparison to an average swiss-citizen.  
+  p The footprint calculator is implemented  with our platform Zircel. It engages the user in a conversation to find out about the user’s behavior.  After finishing the conversation the user  will be left with his or her CO2 footprint in comparison to an average Swiss citizen.  
 
-  img(src="assets/co2-Bild-2.png")
+  img(src="assets/Co2-Bild-2.png")
 
   p The whole purpose is to further spread the awareness and help people reflect about their lifestyles. Whether you calculate it for your own interest, to challenge your friends, to live more consciously or just for fun, it’s completely up to you. 
 
-  p Technology is a daily helper in our day to day lives, so we see this tool as a fun way to combine an important subject with something we use and engage with every day. 	
+  p Technology is a daily helper in our day-to-day lives, so we see this tool as a fun way to combine an important subject with something we use and engage on a daily basis. 	
 
   p If this tool has made you think twice about flying to New York over Christmas, eating a whole pig three times a day or just made you smile and interested in the subject, our goal is already achieved. Challenge a friend, a family member or your next-door neighbor to test it out themselves!
  
-  b Because change starts with us and each of us can make it their own way.
+  b Because change starts with us and each one of us can make it their own way.
 
