@@ -5,13 +5,13 @@ mixin meta(title, date, description, image)
   meta(property="og:description" content=`${description}`)
   meta(property="description" content=`${description}`)
   meta(property="og:type" content="article")
-  meta(property="og:img" content=`${image}`)
+  meta(property="og:img" content=`https://blog.zircel.com/${image}`)
   
   meta(name="twitter:card" content="summary_large_image")
   meta(name="twitter:site" content="@zircel_")
   meta(name="twitter:title" content=`${title}`)
   meta(name="twitter:description" content=`${description}`)
-  meta(name="twitter:image" content=`${image}`)
+  meta(name="twitter:image" content=`https://blog.zircel.com/${image}`)
 
 
 mixin authordate(author, date)
