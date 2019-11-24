@@ -1,11 +1,17 @@
-mixin meta(title, date, description)
+mixin meta(title, date, description, image)
   title #{title}
   meta(itemprop="datePublished" content=`${date}` id="date")
   meta(property="og:title" content=`${title}`)
   meta(property="og:description" content=`${description}`)
   meta(property="description" content=`${description}`)
   meta(property="og:type" content="article")
-  meta(name="twitter:card" content="summary")
+  meta(property="og:img" content=`${image}`)
+  
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:site" content="@zircel_")
+  meta(name="twitter:title" content=`${title}`)
+  meta(name="twitter:description" content=`${description}`)
+  meta(name="twitter:image" content=`${image}`)
 
 
 mixin authordate(author, date)
