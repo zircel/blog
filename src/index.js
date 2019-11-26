@@ -1,9 +1,10 @@
 import './style.css'
 
-const body = document.querySelector('#blog-intro')
+const body1 = document.querySelector('#blog-intro')
+const body2 = document.querySelector('#umfrage')
 const page = document.createElement('zircel-page')
 
-if (body != null) {
+if (body1 != null) {
    // Configuration
    page.pid = '5891d72c07d37b8c12266e8a'
    page.path = '/blog-intro'
@@ -11,8 +12,20 @@ if (body != null) {
    page.mode = process.env.NODE_ENV || 'development'
 
    page.init().catch(err => console.error(err))
-   body.appendChild(page)
+   body1.appendChild(page)
 }
+if (body2 != null) {
+   // Configuration
+   page.pid = '5892db6a3530e56e73bcd2b0'
+   page.path = '/umfrage'
+   page.scrolling = 'document'
+   page.mode = process.env.NODE_ENV || 'development'
+
+   page.init().catch(err => console.error(err))
+   body2.appendChild(page)
+}
+
+
 
 // handling mobile navigation
 const menuburger = document.querySelector('#blog-header .menu-burger')
