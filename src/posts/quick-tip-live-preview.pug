@@ -1,0 +1,29 @@
+extends ../layout.pug
+include ../mixins.pug
+
+block head
+
+  - const author = "Roy"
+  - const title = "Zircel Quick Tip #1 - Preview With Real Content"
+  - const date = "2019-12-05"
+  - const description = "Zircel Quick Tip - Build design templates with real node content." 
+  
+  +meta(title, date, description, img)
+  
+
+block intro 
+
+  h1 Zircel Quick Tip #1 - Preview With Real Content
+  
+  p As designers or front-end developers, we often have to come up with designs that work with all kinds of text-lengths, image sizes or colors. Without real content, it is hard to validate if our implementations actually work in the field. 
+
+  
+  +authordate(author, date)
+
+
+block text
+    
+  p Fortunately, Zircel offers a nifty little feature to solve this problem!
+  br
+  .yt-container
+    iframe(src="https://www.youtube.com/embed/71anuvW0h68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
