@@ -124,6 +124,7 @@ body {
 #blog-menu nav a {
    text-decoration: none;
    color: #676767;
+   line-height: 20px;
 }
 
 #blog-menu nav a:hover {
