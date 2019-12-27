@@ -1,0 +1,33 @@
+extends ../layout.pug
+include ../mixins.pug
+
+block head
+
+  - const author = "Laura"
+  - const title = "How to get started with Zircel"
+  - const date = "2019-12-27"
+  - const description = "Today we introduce you two use cases from Stiftung Wendepunkt. Read along and get some inspiration on what to use Zircel for."
+  - const img = ""
+  
+  +meta(title, date, description)
+
+block intro 
+
+  h1 How to best master the platform at the beginning of your journey
+  p Working with Zircel might feel unnatural and slightly challenging at first. Once you figured out how everything works you are going to love working with it. We promise! To make the transition as fast as possible for you we created this blog to give you some initial guidance.
+
+  +authordate(author, date)
+
+block text
+    
+  h2 What the platform offers
+  p The platform consists of three different parts, which are split into three different tabs: (1) The Tree, (2) the Design, and (3) the App tab. All of them have specific functionality. The Tree tab contains your applications and lets you create new ones by  giving you access to the tree editor (find more information under "How to write your first application"). The Design tab allows you to create new templates that you can later on use for your applications and lets you change existing ones. Be aware, it offers lots of flexibility but it comes with some restrictions, we can highly advise you to look into the documentation before using it;). The last tab, the App tab allows you to add state (or state keys) into your trees. And that's where it gets interesting. With state, you can turn your project from a conversational website into a conversational application. But what does that even mean? "State" is what keeps track of your end-users. It is stored data that you can view, import, export or even manipulate and use for other tasks. More to it in our documentation as well. 
+
+  h2 How to write your first application
+  p The perfect application combines design, a great tree structure and the usage of state (if needed). It requires practice, creativity, and knowledge about the tool. Except for the creativity, which we are sure you have plenty of, everything is easily learnable. The first step is to gain knowledge about what can be done with our platform and how it's best done. For that, we highly advise you to start with our documentation. It displays all the magic which you can make use of. Once you know how to integrate it, start with a draft of your tree structure. The structure is best done by hand, based on our personal experience. It should contain the logic of the user flow, some first content and the purpose of your application. 
+  p After your first draft, you have figured out what components are needed in your application (don't worry if you didn't). With this knowledge, or let's say some first idea, you are now ready to create some first design templates. These templates can, later on, be filled with content in the tree editor. Make sure to add all the components such as buttons, text fields and whatever else you might need in them. No worries, the design itself doesn't have to be perfect, the CSS can always be changed later on. Changing the HTML however, is trickier. Once you are happy with your templates you are ready to start building your tree structure in the tree editor. Fill in your content in the templates, stack them together to define your conversational tree paths and add logic and server actions wherever you need them. Click on preview if you are curious about how it looks in real-time and release the application as soon as you are done. Voila, your first application is live! 
+
+  h2 How to get help
+  p Do not despair if you ever get stuck with anything. If you can't find help in our documentation or something seems odd to you, you can always contact us directly via email under admin@zircel.com.  We are also at your service if need help with your development or if you want a more detailed introduction. Drop us an email and we will get back to you asap. 
+
+  p Not registered yet? No worries, try out our platform for free: <a href="https://zircel.com/" target="blank">zircel.com</a>
