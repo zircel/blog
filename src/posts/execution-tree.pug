@@ -1,0 +1,100 @@
+extends ../layout.pug
+include ../mixins.pug
+
+block head
+
+  - const author = "Roy"
+  - const title = "About Conversational Websites, Trees and Walls"
+  - const date = "2019-12-13"
+  - const img = "assets/execution-tree/wall.jpeg.png" 
+  - const description = "In this post, we discuss the fundamental idea behind conversational websites and explain how we go about solving some of the problems associated with traditional websites." 
+  
+  +meta(title, date, description, img)
+  
+
+block intro 
+
+  h1 About Conversational Websites, Trees and Walls
+  
+  p This blog post was written over a year ago but still reflects lots of the believes we hold at the core of Zircel. In it, we discuss the fundamental idea behind conversational websites and explain how we go about solving some of the problems associated with traditional websites. 
+
+  +authordate(author, date)
+
+
+block text
+
+    figure
+        img(src="assets/execution-tree/wall.jpeg" style="width: 500px" alt="websites are wells between yourself and your audience")
+        figcaption Websites are walls between yourself and your audience
+        
+    p Nowadays, people can video chat from anywhere on earth. And still, modern websites are very similar to plain old books. Today’s websites still rely on a unidirectional communication model. Books have been using this model for centuries. Wouldn’t it be more useful if websites listened to what visitors have to say?
+
+    p There are one million users with one million opinions, interests and knowledge levels. Websites — like books — are walls between website owners and users. They present information but don’t allow users to give their opinions. Imagine how much more valuable a website could become if one knew what visitors think about what they see and read.
+   
+    figure
+        img(src="assets/execution-tree/balance.jpeg" style="width: 400px" alt="conversational applications find a natural balance between information and feedback")
+        figcaption Balance is everything!
+
+    p So, how do website owners manage to receive feedback with traditional websites? Usually, by setting up classical online surveys. Most people presumably participated in such a survey at least once. Do you think they liked it?
+
+    p Independent of your answer you probably agree that there are always more important things to do than filling out a survey. What alternatives are there that make visitors actually want to participate in a survey more often?
+
+    p Our simple answer to solve this problem: bring value to your visitors while you get value yourself!
+
+    p Don’t just simply ask questions — provide answers, insights, knowledge and information at the same time. Find the perfect balance between a traditional website and a traditional survey.
+    
+    p Websites created by Zircel easily find this balance and build a conversational model which is 50% information provider and 50% information gatherer.
+ 
+    figure  
+      img(src="assets/execution-tree/snippets.jpeg" style="width: 400px" alt="Conversational applications split information in small and digestable chunks.")
+      figcaption Learning is not linear — it takes turns
+    
+    p But how does one obtain such a balance?
+
+    p Imagine you are sitting in an university classroom with hundreds of other students and a professor is holding a 2h lecture. How much knowledge are you going to take away from that lecture?
+
+    p Often, you are either bored or overchallenged. In both cases, it doesn’t make sense to listen to the full lecture — especially if you lose track after 5 minutes. We guess most of you would agree that personal tutoring is much more effective in those situations. Why? We think 3 points matter the most:
+
+    ul 
+        li Brevity: Tutors regularly check back with you. Therefore they present content in small, digestible pieces.
+        li Feedback: Tutors are able to adapt to your specific questions and your knowledge level.
+        li Direction: Traditional lectures have a well-defined agenda, which might not suit you. Private tutors, on the other hand, work with your constraints towards your personal goal. Maybe you only have limited time, so your tutor gets to the point directly. Maybe you have a lot of time and your tutor can go into details.
+   
+    p With Zircel, you can build conversational websites that follow those principles. Naturally, those websites split content into bite-sized pieces and present information based on your feedback.
+
+
+    p We still have one remaining question: how does one build such a balanced website? Easy: conversational websites are designed with trees. This might sound a bit confusing, but hold on.
+
+    figure
+      img(src="assets/execution-tree/math-tree.png" alt="A mathematical tree consists of single root node and multiple other nodes")
+      figcaption A mathematical tree consists of single root node and multiple other nodes
+
+    p Of course, we are not talking about trees that might grow in your backyard. You should much rather imagine a mathematical tree — a tree that grows upside down. Therefore, the root of the tree is at the top. From the root, several branches originate and each branch ends in a node that forks several sub-branches. And that’s it!
+
+    //- p If you are visiting our main website (zircel.com), you realize that you always get small pieces of information at a time. That’s the 'brevity' we talked about before. Each of these pieces is represented by a node in the tree and could have multiple options that lead to other nodes.
+
+    figure
+        img(src="assets/execution-tree/options.png" alt="conversational websites offer multiple branches to explore further.")
+        figcaption visitors often have multiple options to explore different branches of the tree
+
+    p As a website owner, you are - visually speaking - the creator of your own tree. You can decide on the shape, the size of the tree and on the number of branches each node should have. Zircel provides an editor to build such trees. All you have to do yourself is build the logic of your tree, everything else is taken care of.
+
+    figure
+        img(src="assets/execution-tree/tree-exploration.png" alt="conversational websites can be explored on different paths")
+        figcaption a visitor explores a part of the tree
+
+    p As a website visitor, you travel through the tree starting from the root. At each node, you decide where to go next. Remember when we talked about "direction" before? With Zircel, website creators can model different paths and as a visitor, you can choose your own path through the tree.
+
+    p But what happens when you have walked through the whole tree and arrive at a leaf node (the bottom of the tree)? We think you should not just sit in a tunnel without an end. Therefore, we built a concept called "recurring" node. That’s basically a node that you can use to travel back to another part within the tree. Imagine an invisible bridge that takes you from one end of the tree to another part of it.
+
+    figure
+        img(src="assets/execution-tree/recurring-nodes.png" alt="In conversational websites one could theoretically end up in a dead end. Recurring nodes help prevent that.")
+        figcaption instead of getting stuck at a leaf node, one can travel to another part of the tree with a recurring node
+    
+    p Of course, this concept of a recurring node is rather counter-intuitive. Why would anyone decide to use it? The answer is simple: reasoning about a tree is much easier than reasoning about a swirled soup of interconnected nodes that are interleaved like spaghetti.
+
+    figure
+        img(src="assets/execution-tree/editor.png" alt="Zircel Tree Editor to build conversational applications")
+        figcaption Zircel editor — red nodes are still to be defined and blue nodes are recurring nodes
+
+    p With a tree, it is really easy to keep an overview of what’s going on. With our editor, you can simply hide half of the tree to get a clearer picture of the other half. When building the tree, you can copy and paste parts of your tree to another position, too. You can imagine how complicated this would be if we wouldn’t use a tree!

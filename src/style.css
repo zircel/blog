@@ -124,6 +124,7 @@ body {
 #blog-menu nav a {
    text-decoration: none;
    color: #676767;
+   line-height: 20px;
 }
 
 #blog-menu nav a:hover {
@@ -298,25 +299,6 @@ body {
 #overview a {
    text-decoration: none;
 }
-/* 
-#overview .docu-chapter {
-   box-shadow: 0px 0px 5px 0 #cccbcb;
-   border-radius: 5px;
-   padding: 20px;
-   height: 100%;
-}
-
-#overview .docu-chapter:hover {
-   background-color: #fcfcfc;
-   box-shadow: inset 0px 0px 5px 0 #cccbcb;
-}
-
-#overview .docu-chapter h2 {
-   margin-top: 0;
-   padding-top: 0;
-} */
-
-/* navigation */
 
 button.menu-close {
    position: absolute;
@@ -471,42 +453,20 @@ button.menu-close {
    }
 }
 
-.firstblog {
-}
-#blogbild {
-   width: 60%;
-   display: inline-block;
-}
-#blogtext {
-   width: 40%;
-   display: inline-block;
+.yt-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
 }
 
-/* special stuff */
-h3.node-illustration:after {
-   content: '';
-   width: 20px;
-   height: 20px;
-   border: 4px solid #3e3d3d;
-   border-radius: 50px;
+.yt-container iframe,
+.yt-container object,
+.yt-container embed {
    position: absolute;
-   display: block;
-   right: -44px;
-   top: 16px;
-}
-
-h3.node-illustration.yellow:after {
-   border-color: #ffe37b;
-}
-
-h3.node-illustration.blue:after {
-   border-color: #8abeff;
-}
-
-h3.node-illustration.red:after {
-   border-color: #e95a56;
-}
-
-h3.node-illustration.green:after {
-   border-color: #85bb65;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
 }
