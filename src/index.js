@@ -16,16 +16,14 @@ if (body1 != null) {
 }
 if (body2 != null) {
    // Configuration
-   page.pid = '5892db6a3530e56e73bcd2b0'
-   page.path = '/umfrage'
+   page.pid = '5891d72c07d37b8c12266e8a'
+   page.path = '/blog-umfrage'
    page.scrolling = 'document'
    page.mode = process.env.NODE_ENV || 'development'
 
    page.init().catch(err => console.error(err))
    body2.appendChild(page)
 }
-
-
 
 // handling mobile navigation
 const menuburger = document.querySelector('#blog-header .menu-burger')
