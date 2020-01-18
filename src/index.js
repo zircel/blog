@@ -45,3 +45,22 @@ homebtn.addEventListener('click', () => {
    console.log('wieso ghet hier nichts')
    location.href = '/'
 })
+
+// footer
+
+const newsletter = document.createElement('zircel-page')
+const featured = document.createElement('zircel-page')
+
+newsletter.pid = '5891d72c07d37b8c12266e8a'
+newsletter.path = '/blog-footer-newsletter'
+newsletter.mode = process.env.NODE_ENV || 'development'
+
+featured.pid = '5891d72c07d37b8c12266e8a'
+featured.path = '/blog-footer-featured'
+featured.mode = process.env.NODE_ENV || 'development'
+
+newsletter.init()
+featured.init()
+
+document.querySelector('footer #newsletter').appendChild(newsletter)
+document.querySelector('footer #featured').appendChild(featured)
